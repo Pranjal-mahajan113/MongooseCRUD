@@ -6,6 +6,8 @@ This is a Node.js + Express + MongoDB (Mongoose) CRUD application.
 ### Open Project Folder
 ###  Install Dependencies
 npm install
+### Start Server
+npm start
 
 
 ## 🧪 Test Using Postman
