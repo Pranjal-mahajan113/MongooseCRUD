@@ -17,8 +17,17 @@ mongoose
 //----Creating Schema--------------------------
 
 const productSchema = mongoose.Schema({
-  name: String,
-  price: Number,
+  name: {
+    type: String,
+    required: [true, "Product name is required"],
+    minlength: [3, "Product name must be at least 3 character long"],
+    trim: true,
+  },
+  price: {
+    type: Number,
+    required: [true, "Product price is required"],
+    min: [0, "Price cannot be negative"],
+  },
 });
 
 //Creating Schema------------------------------------
